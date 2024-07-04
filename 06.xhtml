@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Image Toggle Example</title>
+    <script type="text/javascript">
+        function toggleImage() {
+            var img = document.getElementById('toggleImage');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Toggle Image Example</h1>
+    <button type="button" onclick="toggleImage()">Toggle Image</button>
+    <br />
+    <img id="toggleImage" src="Logo.jpg" alt="Sample Image" style="display:
+block;" />
+</body>
+
+</html>

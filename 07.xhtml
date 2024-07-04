@@ -1,0 +1,64 @@
+<?xml version = “1.0” encoding = “utf-8”?>
+<!DOCTYPE html PUBIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR?xhtml11/DTD/xhtml11.dtd">
+<html xmlns=″http://www.w3.org/1999/xhtml″>
+<script type="text/javascript">
+    var stack1 = "stack1";
+    function toTop(curStack) {
+        var oldStack = document.getElementById(stack1).style;
+        oldStack.zIndex = "0";
+        var newStack = document.getElementById(curStack).style;
+        newStack.zIndex = "10";
+        stack1 = curStack;
+    }
+    function toOriginal() {
+        document.getElementById("stack1").style.zIndex = 0;
+        document.getElementById("stack2").style.zIndex = 0;
+        document.getElementById("stack3").style.zIndex = 0;
+    }
+</script>
+<style type="text/css">
+    .para1 {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        z-index: 0;
+        width: 200;
+        border: solid;
+        padding: 100;
+        background-color: aqua;
+    }
+
+    .para2 {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        z-index: 0;
+        width: 200;
+        border: solid;
+        padding: 100;
+        background-color: yellow;
+    }
+
+    .para3 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        z-index: 0;
+        width: 200;
+        border: solid;
+        padding: 100;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <p class="para1" id="stack1" onmouseover="toTop('stack1')" onmouseout="toOriginal()">
+        !!!Hello ,welcome to Dayananda sagar college of Engineering. !!! </p>
+    <p class="para2" id="stack2" onmouseover="toTop('stack2')" onmouseout="toOriginal()">
+        *** College is located in SHAVIGE MALLESHWARA HILLS, KUMARSWAMY LAYOUT,
+        BANGALORE *** </p>
+    <p class="para3" id="stack3" onmouseover="toTop('stack3')" onmouseout="toOriginal()">
+        ### Welcome to Department of ISE ### </p>
+</body>
+
+</html>

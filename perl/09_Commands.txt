@@ -1,0 +1,68 @@
+first open the terminal and type
+
+sudp -i
+Enter the password: iselab1
+
+it will oepn this
+root@localhost:~# 
+
+---------------------------------
+type this command for perl prog
+
+cd /usr/lib/cgi-bin/
+
+after that type this
+
+gedit 09.pl
+
+it will open the editer app
+
+type the program and save as .pl
+
+after that type
+
+chomd 777 09.pl
+
+----------------------------------
+type this command for html prog
+
+in the same terminal 
+
+cd /var/www/html/
+
+after that type this 
+
+gedit 09.html
+
+it will open the editer app
+
+type the program and save as .html
+
+
+
+------------------------------------
+for mysql
+
+open new terminal
+
+type 
+
+mysql
+
+create database muz;
+show databases;
+use muz;
+create table stud(name varchar(15),age varchar(3));
+CREATE USER 'apache'@'localhost' IDENTIFIED BY 'cool';
+SELECT user FROM mysql.user;
+GRANT ALL PRIVILEGES ON muz.* TO 'apache'@'localhost';
+GRANT ALL PRIVILEGES ON muz.stud TO 'apache'@'localhost';
+FLUSH PRIVILEGES;
+
+
+-----------------------------------------
+open firefox browser and type this url
+
+http://localhost/09.html
+
+the prog will execute
